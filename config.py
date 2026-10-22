@@ -112,9 +112,9 @@ def _read_float_env(
         raise RuntimeError(f"Environment variable {name} must be a float.") from exc
 
 
-BOT_TOKEN = _read_env("BOT_TOKEN", required=True)
+BOT_TOKEN ="8868839325:AAFyyTPcu4Lc_T1vxpVq6N-uecP4ZXYBJRg"
 DATABASE_URL = _read_env("DATABASE_URL", required=True)
-ADMIN_ID = _read_int_env("ADMIN_ID", required=True, aliases=("admin_id",))
+ADMIN_ID ="8868839325"
 CUSTOM_API_URL = _validate_custom_api_url(
     _read_env("CUSTOM_API_URL", required=True, aliases=("custom_api_url",)) or "",
     "CUSTOM_API_URL",
